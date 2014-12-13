@@ -15,7 +15,7 @@ $ npm install --save short-name
 ```js
 var shortName = require('short-name');
 
-var name = shortName('Tom Marvolo Riddle'); // returns `Tom R.`.
+var name = shortName('Tom Marvolo Riddle'); // returns `Tom R.`
 ```
 
 
