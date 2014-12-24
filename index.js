@@ -1,5 +1,6 @@
 'use strict';
-module.exports = function (name) {
+
+var ShortName = function (name) {
 	if (typeof name !== 'string') {
 		return name;
 	}
@@ -14,3 +15,7 @@ module.exports = function (name) {
 	var lastInitial = lastName.substr(0, 1) + '.';
 	return firstName + ' ' + lastInitial;
 };
+
+if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
+	module.exports = ShortName;
+}

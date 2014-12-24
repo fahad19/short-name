@@ -7,10 +7,14 @@
 
 ```sh
 $ npm install --save short-name
+
+$ bower install --save short-name
 ```
 
 
 ## Usage
+
+In node/browserify:
 
 ```js
 var shortName = require('short-name');
@@ -18,6 +22,14 @@ var shortName = require('short-name');
 var name = shortName('Tom Marvolo Riddle'); // returns `Tom R.`
 ```
 
+In browser:
+
+```html
+<script src="dist/short-name.min.js"></script>
+<script>
+    var name = ShortName('Tom Marvolo Riddle');
+</script>
+```
 
 ## License
 
