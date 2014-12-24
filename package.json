@@ -27,7 +27,8 @@
     "mocha": "^2.1.0"
   },
   "scripts": {
-    "test": "./node_modules/.bin/mocha",
-    "lint": "./node_modules/.bin/jshint *.js"
+    "test": "./node_modules/.bin/mocha test/*.js",
+    "lint": "./node_modules/.bin/jshint *.js test/*.js",
+    "build": "npm run lint && npm run test"
   }
 }
