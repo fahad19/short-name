@@ -30,7 +30,8 @@
   "scripts": {
     "test": "./node_modules/.bin/mocha test/*.js",
     "lint": "./node_modules/.bin/jshint *.js test/*.js",
-    "minify": "./node_modules/.bin/uglifyjs index.js -o dist/short-name.min.js",
-    "build": "npm run lint && npm run test && npm run minify"
+    "copy": "cp index.js dist/short-name.js",
+    "minify": "./node_modules/.bin/uglifyjs dist/short-name.js -o dist/short-name.min.js",
+    "build": "npm run lint && npm run test && npm run copy && npm run minify"
   }
 }
